@@ -417,14 +417,14 @@ class Wave2 extends Phaser.Scene {
         // this.scoreText.visible = true;
 
 
-        if (Phaser.Input.Keyboard.JustDown(this.S)) {
-            score += 1000;
-            this.scene.start("Win");
-        }
-
-        // if (my.sprite.targets.length == this.goneCounter) {
+        // if (Phaser.Input.Keyboard.JustDown(this.S)) {
         //     score += 1000;
         //     this.scene.start("Win");
         // }
+
+        if (my.sprite.targets.length == this.goneCounter) {
+            score += 1000;
+            this.scene.start("Win");
+        }
     }
 }

@@ -420,16 +420,16 @@ class Wave1 extends Phaser.Scene {
 
 
 
-        if (Phaser.Input.Keyboard.JustDown(this.S)) {
-            score += 1000;
-            this.scene.start("nextLevel");
-
-        }
-
-        // if (my.sprite.targets.length == this.goneCounter) {
+        // if (Phaser.Input.Keyboard.JustDown(this.S)) {
         //     score += 1000;
         //     this.scene.start("nextLevel");
+
         // }
+
+        if (my.sprite.targets.length == this.goneCounter) {
+            score += 1000;
+            this.scene.start("nextLevel");
+        }
 
         // This is to update score DON'T DELETE
 
