@@ -87,6 +87,9 @@ class Wave1 extends Phaser.Scene {
         // Reset game score
         score = 0;
 
+
+        this.goneCounter = 0;
+        
         // Reset arrays
         this.my.sprite.bulletEn = [];  
         this.my.sprite.bullet = [];  

@@ -83,7 +83,7 @@ class Wave2 extends Phaser.Scene {
     create() {
         let my = this.my;
 
-
+        this.goneCounter = 0;
         // Reset arrays
         this.my.sprite.bulletEn = [];  
         this.my.sprite.bullet = [];  
